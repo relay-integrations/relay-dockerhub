@@ -3,13 +3,14 @@ kind: Integration
 name: dockerhub
 channel: alpha
 version: v20200518
-summary: DockerHub integration
+summary: Relay integration for Docker Hub
 license: Apache-2.0
 homepage: https://github.com/relay-integrations/dockerhub
 source: https://github.com/relay-integrations/dockerhub
 
 description: |
-  Relay GitHub integration.
+  This integration provides access to Docker Hub, a hosted registry for Docker
+  containers.
 
 owner:
   name: Puppet, Inc.

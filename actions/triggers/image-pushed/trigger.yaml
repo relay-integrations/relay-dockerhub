@@ -1,10 +1,10 @@
 apiVersion: integration/v1
 kind: Trigger
-name: image-push
+name: image-pushed
 version: 1
-summary: Docker Hub image-push trigger
+summary: Docker Hub image pushed
 description: |
-  This trigger fires when an image is pushed to the official Docker Hub registry
+  This trigger fires when an image is pushed to the Docker Hub registry.
 
 responders:
 - webhook

@@ -2,7 +2,7 @@ from nebula_sdk import Interface, WebhookServer
 from quart import Quart, request, jsonify, make_response
 
 relay = Interface()
-app = Quart('image-push')
+app = Quart('image-pushed')
 
 
 @app.route('/', methods=['POST'])
