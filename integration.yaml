@@ -1,15 +1,16 @@
 apiVersion: integration/v1
 kind: Integration
-name: template
-channel: stable
-version: v20200514
-summary: Integration template
+name: dockerhub
+channel: alpha
+version: v20200518
+summary: Relay integration for Docker Hub
 license: Apache-2.0
-homepage: https://github.com/relay-integrations/template
-source: https://github.com/relay-integrations/template
+homepage: https://github.com/relay-integrations/dockerhub
+source: https://github.com/relay-integrations/dockerhub
 
 description: |
-  This is a template for creating a Relay Integration repository.
+  This integration provides access to Docker Hub, a hosted registry for Docker
+  containers.
 
 owner:
   name: Puppet, Inc.
@@ -17,5 +18,6 @@ owner:
   url: https://puppet.com
 
 tags:
-- template
+- docker
+- container triggers
 - relay integration

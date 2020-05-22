@@ -1,10 +1,10 @@
 apiVersion: integration/v1
 kind: Trigger
-name: template
+name: image-pushed
 version: 1
-summary: Step template
+summary: Docker Hub image pushed
 description: |
-  This is a template for a simple step.
+  This trigger fires when an image is pushed to the Docker Hub registry.
 
 responders:
 - webhook
