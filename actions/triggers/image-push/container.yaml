@@ -1,0 +1,10 @@
+apiVersion: container/v1
+kind: StepContainer
+inherit: {from: sdk, name: python.v1}
+title: Docker Hub image-push trigger
+description: >
+  This trigger fires when an image is pushed to the official Docker Hub registry
+settings:
+  CommandPath: server.py
+  AdditionalPythonPackages:
+  - quart
