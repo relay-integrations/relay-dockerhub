@@ -16,7 +16,7 @@ async def handler():
     rd = event_payload['repository']
 
     relay.events.emit({
-        'pushed_at': pd['pushed_at'],
+        'pushedAt': pd['pushed_at'],
         'pusher': pd['pusher'],
         'tag': pd['tag'],
         'name': rd['repo_name']
