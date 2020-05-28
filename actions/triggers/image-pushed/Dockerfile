@@ -4,9 +4,9 @@ FROM python:3-alpine
 RUN apk --no-cache add bash ca-certificates curl git jq openssh && update-ca-certificates
 RUN pip --no-cache-dir install "https://packages.nebula.puppet.net/sdk/support/python/v1/nebula_sdk-1-py3-none-any.whl"
 RUN pip --no-cache-dir install quart
-COPY "./handler.py" "/nebula/step-image-pushed.py"
+COPY "./handler.py" "/nebula/step-dockerhub-trigger-image-pushed.py"
 ENTRYPOINT []
-CMD ["python3", "/nebula/step-image-pushed.py"]
+CMD ["python3", "/nebula/step-dockerhub-trigger-image-pushed.py"]
 
 LABEL "org.opencontainers.image.title"="Docker Hub image pushed"
 LABEL "org.opencontainers.image.description"="This trigger fires when an image is pushed to the Docker Hub registry."

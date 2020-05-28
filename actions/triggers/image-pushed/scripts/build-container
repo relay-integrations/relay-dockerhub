@@ -38,9 +38,9 @@ done
 shift $(( OPTIND - 1 ))
 
 
-$DOCKER $DOCKER_ARGS build $DOCKER_BUILD_ARGS --tag sdk.nebula.localhost/intermediate/c8ad4c86e642/image-pushed --file Dockerfile .
+$DOCKER $DOCKER_ARGS build $DOCKER_BUILD_ARGS --tag sdk.nebula.localhost/intermediate/87cb1a90b869/dockerhub-trigger-image-pushed --file Dockerfile .
 
 for TAG in ${TAGS[@]+"${TAGS[@]}"}; do
-  $DOCKER $DOCKER_ARGS tag sdk.nebula.localhost/intermediate/c8ad4c86e642/image-pushed "sdk.nebula.localhost/generated/image-pushed:${TAG}" && \
-    printf "# Tagged %s:%s\n" sdk.nebula.localhost/generated/image-pushed "${TAG}"
+  $DOCKER $DOCKER_ARGS tag sdk.nebula.localhost/intermediate/87cb1a90b869/dockerhub-trigger-image-pushed "relaysh/dockerhub-trigger-image-pushed:${TAG}" && \
+    printf "# Tagged %s:%s\n" relaysh/dockerhub-trigger-image-pushed "${TAG}"
 done
