@@ -2,6 +2,12 @@
 
 Integration with Docker Hub for Puppet Relay
 
+## Actions
+
+| Type | Name | Description |
+|------|-------------|-----| 
+| Trigger | [dockerhub-trigger-image-pushed](/triggers/dockerhub-trigger-image-pushed) | Triggers when new image is pushed |
+
 ## Contributing
 
 ### Issues

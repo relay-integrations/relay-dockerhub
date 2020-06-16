@@ -5,8 +5,8 @@ channel: alpha
 version: v20200518
 summary: Relay integration for Docker Hub
 license: Apache-2.0
-homepage: https://github.com/relay-integrations/dockerhub
-source: https://github.com/relay-integrations/dockerhub
+homepage: https://github.com/relay-integrations/relay-dockerhub
+source: https://github.com/relay-integrations/relay-dockerhub
 
 description: |
   This integration provides access to Docker Hub, a hosted registry for Docker

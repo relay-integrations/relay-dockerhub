@@ -1,6 +1,6 @@
 apiVersion: integration/v1
 kind: Trigger
-name: image-pushed
+name: dockerhub-trigger-image-pushed
 version: 1
 summary: Docker Hub image pushed
 description: |
