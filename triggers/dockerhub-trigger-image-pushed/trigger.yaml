@@ -23,7 +23,7 @@ publish:
 examples:
 - summary: When an image is pushed
   content:
-    apiVersion: 1
+    apiVersion: v1
     kind: Trigger
     name: image-pushed
     source:
