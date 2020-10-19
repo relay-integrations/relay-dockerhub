@@ -4,7 +4,8 @@
     "properties": {
       "pushedat": {
         "type": "string",
-        "description": "Time image was last pushed"
+        "description": "Time image was last pushed",
+        "format": "date-time"
       },
       "pusher": {
         "type": "integer",
