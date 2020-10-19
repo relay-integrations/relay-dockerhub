@@ -3,7 +3,7 @@ kind: Integration
 name: dockerhub
 channel: alpha
 version: v20200518
-summary: Relay integration for Docker Hub
+summary: Docker Hub
 license: Apache-2.0
 homepage: https://github.com/relay-integrations/relay-dockerhub
 source: https://github.com/relay-integrations/relay-dockerhub
