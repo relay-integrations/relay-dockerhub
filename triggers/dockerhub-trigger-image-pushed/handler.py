@@ -1,13 +1,18 @@
 from nebula_sdk import Interface, WebhookServer
 from quart import Quart, request, jsonify, make_response
+import json
+import logging
 
 relay = Interface()
 app = Quart('image-pushed')
 
+logging.getLogger().setLevel(logging.INFO)
 
 @app.route('/', methods=['POST'])
 async def handler():
     event_payload = await request.get_json()
+
+    logging.info("Received the following webhook payload: \n%s", json.dumps(event_payload, indent=4))
 
     if event_payload is None:
         return await make_response(jsonify(message='not a valid Docker Hub event'), 400)
