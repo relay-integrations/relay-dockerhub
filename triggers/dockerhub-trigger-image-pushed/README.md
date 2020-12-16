@@ -12,5 +12,3 @@ This trigger fires when an image is pushed to the Docker Hub registry.
 - Navigate to your Relay workflow and copy the webhook url
 - Paste it into the field "Webhook URL"
 - Click "Create"
-
-![Dockerhub webhook](../../media/dockerhub-webhook.gif)
