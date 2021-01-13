@@ -24,7 +24,14 @@ async def handler():
         'pushedAt': pd['pushed_at'],
         'pusher': pd['pusher'],
         'tag': pd['tag'],
-        'name': rd['repo_name']
+        'repoName': rd['repo_name'],
+        'description': rd['description'],
+        'fullDescription': rd['full_description'],
+        'owner': rd['owner'],
+        'isOfficial': rd['is_official'],
+        'isPrivate': rd['is_private'],
+        'namespace': rd['namespace'],
+        'repoUrl': rd['repo_url']
     })
 
     return await make_response(jsonify(message='success'), 200)
