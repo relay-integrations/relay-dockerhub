@@ -15,16 +15,51 @@
         "type": "string",
         "description": "Image tag"
       },
-      "name": {
+      "repoName": {
         "type": "string",
         "description": "Image repository name"
+      },
+      "description": {
+        "type": "string",
+        "description": "Image repository description"
+      },
+      "fullDescription": {
+        "type": "string",
+        "description": "Image repository full description"
+      },
+      "owner": {
+        "type": "string",
+        "description": "Image repository owner"
+      },
+      "isOfficial": {
+        "type": "boolean",
+        "description": "Whether repository is official"
+      },
+      "isPrivate": {
+        "type": "boolean",
+        "description": "Whether repository is private"
+      },
+      "namespace": {
+        "type": "string",
+        "description": "Image repository namespace"
+      },
+      "repoUrl": {
+        "type": "string",
+        "description": "Image repository URL"
       }
     },
     "required": [
       "pushedat",
       "pusher",
       "tag",
-      "name"
+      "repoName",
+      "description",
+      "fullDescription",
+      "owner",
+      "isOfficial",
+      "isPrivate",
+      "namespace",
+      "repoUrl"
     ],
     "additionalProperties": false
   }
